@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "860683811402",
+    "project_id": "destination-opsc-68fe2",
+    "storage_bucket": "destination-opsc-68fe2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860683811402:android:bd14930e9d5e0e419544b3",
+        "android_client_info": {
+          "package_name": "com.tseopela.destination"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860683811402-1kusibff52lbc6k44oulos3j449fliuf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHVyuSQTvwjz9XhK_9G3hfRZCWMEhcAgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860683811402-1kusibff52lbc6k44oulos3j449fliuf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

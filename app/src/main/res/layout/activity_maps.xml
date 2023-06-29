@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <RelativeLayout
+        android:id="@+id/searchB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_border">
+
+        <ImageView
+            android:id="@+id/ic_search"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/searchbar" />
+
+        <EditText
+            android:id="@+id/edSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ic_search"
+            android:background="@null"
+            android:hint="Please enter Address,City or Zip Code"
+            android:imeOptions="actionSearch"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+    <!--    <fragment android:id="@+id/autocomplete_fragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"-->
+<!--        />-->
+
+
+    <RelativeLayout
+        android:id="@+id/landmarks"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp">
+
+
+        <ImageButton
+            android:id="@+id/hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/white_border"
+            android:padding="30dp"
+            android:src="@drawable/hospital" />
+
+        <ImageButton
+            android:id="@+id/restaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/white_border"
+            android:padding="30dp"
+            android:src="@drawable/restaurant" />
+
+        <ImageButton
+            android:id="@+id/atm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:background="@drawable/white_border"
+            android:padding="30dp"
+            android:src="@drawable/atm" />
+
+        <ImageButton
+            android:id="@+id/museum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:background="@drawable/white_border"
+            android:padding="30dp"
+            android:src="@drawable/museum" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabGPS"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/searchB"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="83dp"
+        android:layout_marginRight="3dp"
+        android:backgroundTint="#32CD32"
+        android:foregroundGravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:src="@drawable/gps"
+        map:fabCustomSize="40dp"
+        map:fabSize="normal" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabDirections"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/searchB"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="187dp"
+        android:layout_marginRight="4dp"
+        android:backgroundTint="#32CD32"
+        android:foregroundGravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:src="@drawable/directions"
+        map:fabCustomSize="40dp"
+        map:fabSize="normal" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabDuration"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/searchB"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="283dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="#32CD32"
+        android:foregroundGravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:src="@drawable/swapvectorass"
+        map:fabCustomSize="40dp"
+        map:fabSize="normal" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

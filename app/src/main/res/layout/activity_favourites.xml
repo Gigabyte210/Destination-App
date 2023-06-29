@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FavouritesActivity">
+
+    <ImageView
+        android:layout_width="450dp"
+        android:layout_height="101dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please add your favourite locations"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="25dp"
+        android:textSize="25sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:height="30dp"
+            android:id="@+id/textPrompt"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Location:"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edLocation"
+            android:layout_width="250dp"
+            android:layout_marginTop="20dp"
+            android:height="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_rounded_button"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/ic_baseline_add_location_24"
+            android:drawablePadding="10dp"
+            android:hint="Enter location"
+            android:textColor="@color/dest_blue"
+            android:backgroundTint="@color/white"
+            android:ems="16"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#32CD32"
+        android:foregroundGravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_baseline_add_location_24"
+        android:layout_marginBottom="10dp"
+        app:fabSize="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lstAdd"
+            android:layout_width="410dp"
+            android:layout_height="380dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
